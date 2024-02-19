@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Added by HTTrack --><meta
+    http-equiv="content-type"
+    content="text/html;charset=UTF-8"
+  /><!-- /Added by HTTrack -->
+  <head>
+    <!-- Meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta
+      name="keywords"
+      content="blockit, uikit3,  handlebars, scss, javascript"
+    />
+    <meta name="author" content="Indonez" />
+    <meta name="theme-color" content="#DF4478" />
+    <!-- critical preload -->
+    <link rel="preload" href="js/vendors/bootstrap.bundle.min.js" as="script" />
+    <link rel="preload" href="css/style.css" as="style" />
+    <!-- icon preload -->
+    <link
+      rel="preload"
+      href="fonts/fa-brands-400.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="fonts/fa-solid-900.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <!-- font preload -->
+    <link
+      rel="preload"
+      href="fonts/dm-sans-v11-latin-700.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="fonts/dm-sans-v11-latin-regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <!-- Touch icon -->
+    <link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon.png" />
+    <title>Sign In - Blockit Starter HTML5 Template</title>
+  </head>
+
+  <body class="bg-white">
+    <!-- page loader begin -->
+    <div
+      class="page-loader w-100 h-100 bg-white d-flex justify-content-center align-items-center position-fixed overflow-hidden"
+    >
+      <div class="spinner-grow spinner-grow-sm text-primary"></div>
+      <div class="spinner-grow spinner-grow-sm text-primary"></div>
+      <div class="spinner-grow spinner-grow-sm text-primary"></div>
+    </div>
+    <!-- page loader end -->
+    <main>
+      <!-- section content begin -->
+      <section>
+        <div class="container-fluid ">
+          <div class="row vh-100">
+            <div
+              class="col-6 bg-light shadow-lg d-none d-lg-block"
+              style="
+                background-image: url(img/blockit/in-signin-image.jpg);
+                background-size: cover;
+              "
+            ></div>
+            <div class="col-md-12 py-3 col-lg-6 d-flex align-items-center ">
+              <div class="row justify-content-center overflow-auto ">
+                <div class="col-md-8 col-lg-6">
+                  <div class="text-center">
+                    <a class="navbar-brand" href="index.html">
+                      <img src="./img/signlogo.png" alt="logo" />
+                    </a>
+                    <div class="text-muted mt-1 mb-3">
+                      <h1 class="text-muted text-lg-center">
+                        Create your free Account
+                      </h1>
+                      <p class="text-dark" style="font-size: 0.8rem">
+                        Welcome back! Select method to Log in:
+                      </p>
+                    </div>
+                    <!-- login form begin -->
+
+                    <div
+                      class="mb-3 d-flex flex-lg-row flex-column gap-2 w-100"
+                    >
+                      <a
+                        class="btn btn-light rounded-2 d-flex gap-2 align-items-center w-100"
+                        href="#"
+                        ><img
+                          src="./img/google.png"
+                          alt=""
+                          width="20px"
+                        />Google</a
+                      >
+                      <a
+                        class="btn btn-light rounded-2 d-flex gap-2 align-items-center w-100"
+                        href="#"
+                        ><img
+                          src="./img/facebook.png"
+                          width="20px"
+                        />Facebook</a
+                      >
+                    </div>
+                    <h6 class="mt-4 mb-4 text-line">
+                      <span class="text-muted">Or use your email</span>
+                    </h6>
+                    <form action="./code.html" class="mb-2">
+                      <div class="row g-1">
+                        <!-- School Name -->
+                        <div class="col-12">
+                          <div class="input-group">
+                            <input
+                              id="School"
+                              type="text"
+                              class="form-control"
+                              placeholder="School Name"
+                              aria-label="School"
+                            />
+                            <span class="input-group-text"
+                              ><i class="fas fa-school fa-xs text-secondary"></i
+                            ></span>
+                          </div>
+                        </div>
+                        <!-- FullName -->
+                        <div class="col-12">
+                          <div class="input-group">
+                            <input
+                              id="text"
+                              type="text"
+                              class="form-control"
+                              placeholder="Full name"
+                              aria-label="text"
+                            />
+                            <span class="input-group-text"
+                              ><i class="fas fa-user fa-xs text-secondary"></i
+                            ></span>
+                          </div>
+                        </div>
+                        <!-- Email -->
+                        <div class="col-12">
+                          <div class="input-group">
+                            <input
+                              id="email"
+                              type="email"
+                              class="form-control"
+                              placeholder="E-mail"
+                              aria-label="email"
+                            />
+                            <span class="input-group-text"
+                              ><i class="fas fa-lock fa-xs text-secondary"></i
+                            ></span>
+                          </div>
+                        </div>
+
+                        <!-- Create Password -->
+                        <div class="col-12">
+                          <div class="input-group">
+                            <input
+                              id="password"
+                              type="password"
+                              class="form-control"
+                              placeholder="Create Password"
+                              aria-label="Password"
+                            />
+                            <span class="input-group-text"
+                              ><i class="fas fa-lock fa-xs text-secondary"></i
+                            ></span>
+                          </div>
+                        </div>
+                        <!-- Re-enter password -->
+                        <div class="col-12">
+                          <div class="input-group">
+                            <input
+                              id="password"
+                              type="password"
+                              class="form-control"
+                              placeholder="Re-enter Password"
+                              aria-label="Password"
+                            />
+                            <span class="input-group-text"
+                              ><i class="fas fa-lock fa-xs text-secondary"></i
+                            ></span>
+                          </div>
+                        </div>
+
+                        <div class="d-grid">
+                          <button
+                            type="submit"
+                            class="btn btn-primary rounded-pill"
+                            name="submit"
+                          >
+                            Sign in
+                          </button>
+                        </div>
+                      </div>
+                    </form>
+                    <!-- login form end -->
+
+                    <small class="text-muted"
+                      >Already had an account?
+                      <a
+                        href="./signin.html"
+                        class="link-primary text-decoration-none"
+                        >Sign Up</a
+                      ></small
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- javascript -->
+    <script src="js/vendors/bootstrap.bundle.min.js"></script>
+    <script src="js/vendors/vanilla-marquee.min.js"></script>
+    <script src="js/utilities.min.js"></script>
+    <script src="js/config-theme.js"></script>
+  </body>
+</html>

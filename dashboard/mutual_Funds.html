@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+
+<head>
+  <!-- Meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="keywords" content="blockit, uikit3, handlebars, scss, javascript" />
+  <meta name="author" content="Indonez" />
+  <meta name="theme-color" content="#DF4478" />
+  <!-- critical preload -->
+  <link rel="preload" href="../js/vendors/bootstrap.bundle.min.js" as="script" />
+  <link rel="preload" href="../css/style.css" as="style" />
+  <!-- icon preload -->
+  <link rel="preload" href="fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin />
+  <!-- font preload -->
+  <link rel="preload" href="fonts/dm-sans-v11-latin-700.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="fonts/dm-sans-v11-latin-regular.woff2" as="font" type="font/woff2" crossorigin />
+  <!-- stylesheet -->
+  <link rel="stylesheet" href="../css/style.css" />
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" />
+  <!-- Touch icon -->
+  <link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon.png" />
+  <title>Student Financial AID</title>
+
+
+</head>
+
+<body class="bg-white">
+  <!-- page loader begin -->
+  <div
+    class="page-loader w-100 h-100 bg-white d-flex justify-content-center align-items-center position-fixed overflow-hidden">
+    <div class="spinner-grow spinner-grow-sm text-primary"></div>
+    <div class="spinner-grow spinner-grow-sm text-primary"></div>
+    <div class="spinner-grow spinner-grow-sm text-primary"></div>
+  </div>
+  <!-- page loader end -->
+
+  <!-- dashboard side navigation bar -->
+
+  <div class="DBmain vh-100    ms-5" style="transition: .5s ease;">
+    <div class="position-fixed  show-nav  col-lg-3 vh-100 start-0 overflow-auto  bg-primary p-2  " style="z-index:80;">
+      <div class="w-100  mb-3 d-flex align-items-center">
+
+        <a href="#">
+          <img src="../img/logo2.png" alt="">
+        </a>
+        <i class=" btn fa fa-xmark text-white ms-auto d-none d-lg-block " style="cursor: pointer;"></i>
+      </div>
+
+      <ul class="p-0 dashnboardItems">
+        <li class=" mb-1  list-unstyled px-2 p-1 rounded-2">
+          <a class="nav-link text-white" href="./main.html">
+            <img src="../img/icons/dashboard-circle.png" class="me-1" alt="">
+            Dashboard
+          </a>
+        </li>
+        <li class="bg-white mb-1  list-unstyled px-2 p-1 rounded-2">
+          <a class="nav-link text-primary" href="#">
+            <img src="../img/icons/mutual_Funds_active.png" class="me-1" alt="">
+            Mutual Funds</a>
+        </li>
+        <li class=" mb-1  list-unstyled px-2 p-1 rounded-2">
+          <a class="nav-link text-white" href="../dashboard/trannsaction_history.html">
+            <img src="../img/icons/transaction-History.png" class="me-1" alt="">
+
+            Transaction History</a>
+        </li>
+        <li class=" mb-1  list-unstyled px-2 p-1 rounded-2">
+          <a class="nav-link text-white" href="./settings.html">
+            <img src="../img/icons/settings.png" class="me-1" alt="">
+
+            Settings</a>
+        </li>
+
+
+      </ul>
+
+   </div>
+    <!-- fixed background cover -->
+    <div class="position-fixed top-0 bottom-0 w-100 bg-cover "  style="z-index: 4; background-color: rgba(0, 0, 0, 0.404); "  >
+
+        </div>
+
+    <!-- dashboard side navigation bar ends-->
+
+    <div class="p-0  w-100">
+      <!--  top nav bar start -->
+      <div class="p-2 d-flex  align-items-center border-3   border-bottom-lg position-sticky w-100 top-0 "
+        style="background-color: #fffffff6;">
+        <span>
+
+          <i class="fas fa-bars bg-primary text-white d-inline-block p-1 rounded-1" style="cursor: pointer; "></i>
+          <h6 class="d-inline-block d-lg-none">Mutual Funds</h6>
+        </span>
+
+
+        <div class="  d-flex align-items-center  ms-auto ">
+          <div class="notification-icon">
+            <a href="./notification.html" class="text-decoration-none text-primary">
+              <i class="fas fa-bell"></i>
+              <span class="badge text-white" >2</span>
+            </a>
+          </div>
+
+          <ul class="navbar-nav p-0 ms-3 ">
+
+            <li class="nav-item dropdown ">
+              <a class="nav-link dropdown-toggle" href="#" id="dropdownCompany" data-bs-toggle="dropdown"
+                aria-expanded="false"> <img src="../img/in-avo-17-image-2.jpg " class="rounded-circle " alt=""
+                  style="object-fit: cover;" width="30px" height="30px" /></a>
+              <ul class="dropdown-menu position-absolute " style="margin-left: -200px;">
+                <li>
+                  <a class="dropdown-item" href="about.html">About</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="blog.html">Blog</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"><i class="fa-solid fa-gear"></i> Settings</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"><i class="fa fa-user"></i> Profile</a>
+                </li>
+              </ul>
+            </li>
+
+          </ul>
+
+
+
+        </div>
+      </div>
+      <!--  top nav bar ends -->
+
+      <div class="row p-lg-4 m-lg-2 rounded-3 p-1" style="background-color: #EFF1FA">
+
+        <div class="col-lg-7">
+          <p class="display-6 text-black d-none d-lg-block fw-bold">
+            Mutual Funds
+
+          </p>
+
+          <!-- CARD -->
+          <div style="overflow-x: auto; ">
+
+            <div class=" d-flex  mb-4">
+              <div class="bg-white  d-inline-block rounded-3 me-2 p-2 pe-5 ps-3  w-100 text-black">
+                <img src="../img/icons/fund.png" alt="">
+                <p class=" m-0 fw-semibold text-black mt-1">ProfitPulse </p>
+
+                <small>Return</small>
+                <p style="font-weight: 600; color: #4CAF50;">25.9%</p>
+              </div>
+              <div class="bg-white w-100  d-inline-block rounded-3 p-2 me-2 pe-5 ps-3   text-black">
+                <img src="../img/icons/fund.png" alt="">
+                <p class=" m-0 fw-semibold text-black mt-1">RiskRider</p>
+
+                <small>Return</small>
+                <p style="font-weight: 600; color: #4CAF50;">25.9%</p>
+              </div>
+              <div class="bg-white w-100  d-inline-block  rounded-3 p-2 me-2 pe-5 ps-3  text-black">
+                <img src="../img/icons/fund.png" alt="">
+                <p class=" m-0 fw-semibold text-black mt-1">RiskRider</p>
+                <small>Return</small>
+                <p style="font-weight: 600; color: #4CAF50;">25.9%</p>
+              </div>
+            </div>
+
+
+
+
+          </div>
+
+          <div class=" overflow-auto mt-3 ">
+
+            <table class=" text-black w-100 ">
+              <thead class="mb-2  w-100 ">
+                <tr class="w-100 ">
+                  <th class="px-lg-4 fw-bold ">All Mutual Funds</th>
+                  <th class=" px-lg-4 fw-bold text-end">Returns</th>
+                </tr>
+              </thead>
+
+              <tbody style="background-color: #EFF1FA; "  >
+                <tr class="border-bottom  ">
+                  <td class=" px-lg-4 py-2 d-flex"><img src="../img/icons/block.png" alt="" ><span
+                      class=" d-inline-flex flex-column ms-1 fw-normal"> StudentTrade Symphony <small class=" fw-light " style="color: gray;">2 Weeks</small></span></td>
+                  <td class=" px-lg-4 text-end fs-6">Return <span class="d-block" style="color: #4CAF50;">25.9%</span></td>
+
+
+                </tr>
+
+
+
+
+                <tr class="border-bottom  ">
+                  <td class=" px-lg-4 py-2 d-flex"><img src="../img/icons/block.png" alt="" ><span
+                      class=" d-inline-flex flex-column ms-1 fw-normal"> StudentTrade Symphony <small class=" fw-light " style="color: gray;">2 Weeks</small></span></td>
+                  <td class=" px-lg-4 text-end fs-6">Return <span class="d-block" style="color: #4CAF50;">25.9%</span></td>
+
+
+                </tr>
+
+              </tbody>
+
+            </table>
+          </div>
+
+
+
+        </div>
+        <!--No Plan Selected  -->
+        <div class="col-lg-5  mt-lg-0 mt-3">
+          <div class=" border-lg rounded p-5  h-100 d-flex align-items-center justify-content-center">
+            <div class="text-center">
+              <img src="/img/icons/cursor.png" class="d-block mx-auto" alt="">
+              <small class="fw-semibold">No Plan Selected yet</small>
+            </div>
+          </div>
+        </div>
+
+        <!-- Plan Selected -->
+        <!-- <form action="./mutual_Funds_payments.html" class="col-lg-5  mt-lg-0 mt-3 ">
+          <div class=" border-lg rounded  p-lg-2 h-auto" style="background-color: rgba(255, 255, 255, 0.185);">
+              <div class="bg-white  d-flex  align-items-start rounded-3 p-2   text-black">
+                <img src="../img/icons/fund.png" alt="" >
+              <div class="ms-2">
+
+                <p class=" m-0 fw-semibold text-black mt-1">ProfitPulse Plan</p>
+
+                <small>Return</small>
+                <p style="font-weight: 600; color: #4CAF50;">25.9%</p>
+              </div>
+              </div>
+
+              <div class="mt-3 text-center text-truncate">
+
+                <p>Enter Amount for Investment</p>
+                <input type="text" class="text-primary pb-2 border-0 border-bottom border-2 border-primary  bg-transparent text-center d-block w-100 h1" style="outline: none;" >
+                <div class="bg-white d-flex rounded align-items-center p-2 ">
+                  <img src="../img//icons/calendar.png" alt="">
+                  <input type="text" placeholder="Set Date" class="ms-1 border-0 bg-transparent w-25" style="outline: none;">
+                  <small class="ms-auto text-primary fw-semibold">14 days from now</small>
+                </div>
+              </div>
+              <small class="text-muted text-center d-block w-75 mt-2 mx-auto">If you invest N5,000.00, your estimated returns on Feb 24th
+                will be N10,000.</small>
+
+                <div class="mt-3 form-check  ">
+                  <input type="checkbox" class="form-check-input" id="checkbox">
+                  <label  class="form-check-label" for="checkbox">Agree to the <a href="#" class="text-black text-decoration-none" >terms</a> and <a href="#" class="text-black text-decoration-none">Conditions</a></label >
+                </div>
+                <button class="bg-primary w-100 border-0 mt-2 rounded-2 p-2 text-white form-check-label">Invest Now</button>
+          </div>
+        </form> -->
+      </div>
+
+      </div>
+
+
+
+
+    </div>
+
+
+    <div class="d-none d-lg-block">
+      <a href="#" class="to-top fas fa-arrow-up text-decoration-none text-white"></a>
+    </div>
+    <!-- to top end -->
+    <!-- javascript -->
+    <script src="../js/vendors/bootstrap.bundle.min.js"></script>
+    <script src="../js/vendors/vanilla-marquee.min.js"></script>
+    <script src="../js/vendors/tradingview-widget.min.js"></script>
+    <script src="../js/utilities.min.js"></script>
+    <script src="../js/config-theme.js"></script>
+
+    <script>
+      var navigation = document.querySelector(".show-nav")
+      var BTN = document.querySelector(".fa-bars")
+      var bgCover = document.querySelector(".bg-cover")
+      var DBmain = document.querySelector(".DBmain")
+      var Cancel = document.querySelector(".fa-xmark")
+
+
+      BTN.addEventListener("click", () => {
+        navigation.classList.add("show-nav")
+        bgCover.style.display = "block"
+        DBmain.classList.add("ms-5")
+      })
+      Cancel.addEventListener("click", () => {
+        navigation.classList.add("left-0")
+        navigation.classList.remove("show-nav")
+        bgCover.style.display = "none"
+        DBmain.style.marginLeft = "0"
+        DBmain.classList.remove("ms-5")
+
+      })
+      window.addEventListener("click", function (e) {
+
+
+
+        if (e.target != navigation && e.target != BTN && !navigation.contains(e.target)) {
+          navigation.classList.remove("show-nav")
+          navigation.classList.add("left-0")
+          bgCover.style.display = "none"
+          DBmain.style.marginLeft = "0"
+          DBmain.classList.remove("ms-5")
+
+        } else {
+        }
+      })
+    </script>
+</body>
+
+</html>
